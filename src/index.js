@@ -823,7 +823,7 @@ class PhoneInput extends React.Component {
           role='option'
           {...highlight ? { "aria-selected": true } : {}}
         >
-          {/* <div className={inputFlagClasses} /> */}
+          <div className={inputFlagClasses} />
           <span className='country-name'>{this.getDropdownCountryName(country)}</span>
           <span className='dial-code'>( +{country.format ? this.formatNumber(country.dialCode, country) : (prefix + country.dialCode)} )</span>
         </li>
